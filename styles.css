@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Comic Sans";
+    src: url("Assets/Fonts/COMIC.TTF") format("truetype");
+}
+
+html {
+    color: aliceblue;
+    font-family: "Comic Sans";
+}
+
+body {
+    background-color: brown;
+    margin: auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 67;
+    
+    background-color: black;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 5px;
+}
+
+main {
+    margin: 0 10%;
+    background-color: coral;
+    min-height: 900px;
+}
