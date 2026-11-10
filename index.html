@@ -1,21 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>BRAINROT TEST</title>
+    <title>UNC MEME QUIZ</title>
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link rel="icon" href="Assets/icon.jpg">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
 <header>
-    <h1>BRAINROT TEST</h1>
+    <h1 id="header-text">UNC MEME TEST</h1>
 </header>
 
 <main>
+    <!-- Different sections -->
+
+    <div id="start-panel" style="background-color: brown; border-radius: 10px; padding: 20px;">
+        <div style="font-size: 45px; margin-bottom: 20px;">Wanna find out how big of an unc you are???</div>
+        <div style="display: flex; flex-direction: row; gap: 10px; justify-content: center;">
+            <input
+                id="nickname-input" 
+                placeholder="Enter your guest nickname here!!!"
+                style="font-size: 20px; width: 500px;"
+            >
+            <button
+                style="font-size: 20px; width: 100px;"
+                onclick="TryToStartQuiz()"
+            >Let's go</button>
+        </div>
+    </div>
+
+    <div id="question-panel" style="text-align: center;">
+        <img id="question-image" style="max-height: 40vh; object-fit: contain;" src="Assets/Images/image1.png">
+        <h1 id="question-text" style="font-size: 40px;">Question goes here</h3>
+        <div id="question-options"></div>
+    </div>
+
+    <div id="results-panel" style="text-align: center;">
+        <h1 id="score"></h1>
+        <h2 id="unc-status"></h2>
+        <button onclick="OpenPanel('start')">Quiz again!</button>
+        <h3>Other peeps scores:</h3>
+        <ol id="leaderboard"></ol>
+    </div>
 
 </main>
 
